@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Biztonsági beállítások -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' https://cdn.jsdelivr.net; 
+             style-src 'self' https://cdn.jsdelivr.net; 
+             script-src 'self' https://cdn.jsdelivr.net'; 
+             img-src 'self' data:; object-src 'none';">
+
+  <title>CyberLaw Legal Group</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Saját CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CyberLaw</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Menü">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="text-white text-center py-5" id="home">
+    <div class="container">
+      <h1 class="display-4">Your Legal Defense in the Digital World</h1>
+      <p class="lead">Modern legal solutions for a cybersecurity-driven age.</p>
+      <a href="#contact" class="btn btn-light btn-lg mt-3">Request Consultation</a>
+    </div>
+  </header>
+
+  <section class="py-5" id="services">
+    <div class="container">
+      <h2 class="mb-4 text-center">Legal Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Cybersecurity Law</h5>
+          <p>Protection and defense for data breaches, cybercrimes, and IT compliance.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Corporate & IP Law</h5>
+          <p>Intellectual property, corporate structuring, contracts, and digital assets.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Criminal & Civil Law</h5>
+          <p>Representation for civil disputes, white-collar crime, and investigations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="about">
+    <div class="container">
+      <h2 class="mb-4 text-center">About Us</h2>
+      <p class="text-center">With over 15 years of experience in digital law, CyberLaw Legal Group brings unmatched insight into the evolving legal challenges of cybersecurity, privacy, and modern justice. We operate with confidentiality, trust, and cutting-edge legal intelligence.</p>
+    </div>
+  </section>
+
+  <section class="py-5" id="contact">
+    <div class="container">
+      <h2 class="mb-4 text-center">Contact Us</h2>
+      <form id="contactForm" method="POST" action="submit_form.php">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Send Secure Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-white text-center py-3">
+    <p>&copy; 2025 CyberLaw Legal Group. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Saját JS -->
+  <script src="script.js"></script>
+</body>
+</html>
